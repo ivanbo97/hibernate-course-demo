@@ -20,7 +20,6 @@ public class CreateStudentDemo {
 		Session session = factory.getCurrentSession();
 		try {
 			
-			
 			// create a student object
 			System.out.println("Creating a new student object...");
 			Student student = new Student("Paul","Wall","paul@luv2code.com");
@@ -34,8 +33,7 @@ public class CreateStudentDemo {
 			
 			// commit the transaction
 			System.out.println("The transaction is done.");
-			session.getTransaction().commit();
-				
+			session.getTransaction().commit();		
 			
 		} finally {
 			factory.close();
